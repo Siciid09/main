@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government & Campaign Infrastructure | HiigsiTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                        display: ['"Outfit"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0055FF', // Vibrant Tech Blue
+                            dark: '#0F172A', // Slate 900
+                            light: '#F8FAFC', // Slate 50
+                            gold: '#F59E0B'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'scroll': 'scroll 25s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        scroll: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        .long-scroll::-webkit-scrollbar { width: 6px; }
+        .long-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+        .long-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        .long-scroll::-webkit-scrollbar-thumb:hover { background: #0055FF; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .feature-icon {
+            width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; transition: all 0.3s;
+        }
+        
+        .hover-lift { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s; }
+        .hover-lift:hover { transform: translateY(-10px); box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-600 font-sans antialiased selection:bg-brand-blue selection:text-white">
+
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center text-white font-display font-bold text-xl shadow-lg shadow-blue-500/30">H</div>
+                <span class="text-brand-dark font-display font-bold text-xl tracking-tight">Hiigsi<span class="text-brand-blue">Tech</span></span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+252653227084" class="hidden md:flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-brand-blue transition">
+                    <i class="fa-solid fa-phone-volume animate-pulse"></i> +252 65 322 7084
+                </a>
+                <a href="#pricing" class="px-6 py-2.5 bg-brand-dark text-white text-sm font-bold rounded-full hover:bg-brand-blue transition shadow-lg hover:shadow-blue-500/50">
+                    View Proposal
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-40 pb-24 relative overflow-hidden bg-white">
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float"></div>
+        <div class="absolute top-0 left-0 w-[600px] h-[600px] bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float" style="animation-delay: 2s;"></div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-brand-blue text-[11px] font-bold uppercase tracking-widest mb-8" data-aos="fade-down">
+                <span class="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></span>
+                Official Government Standard
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-display font-extrabold text-brand-dark mb-8 leading-[1.1] tracking-tight" data-aos="fade-up" data-aos-delay="100">
+                Digital Sovereignty for <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-purple-600">Modern Leaders</span>
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-slate-500 text-lg leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="200">
+                Elections and public opinion are won online. We provide government-grade infrastructure, advanced security, and professional design to legitimize your vision across the Horn of Africa.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#pricing" class="px-8 py-4 bg-brand-blue text-white font-bold rounded-xl shadow-xl shadow-blue-500/30 hover:scale-105 transition transform">
+                    See Investment Options
+                </a>
+                <a href="https://wa.me/252653227084" class="px-8 py-4 bg-white text-brand-dark border border-slate-200 font-bold rounded-xl hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i> Chat with Strategy Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white border-y border-slate-100 overflow-hidden">
+        <div class="container mx-auto px-6 mb-6 text-center">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">Trusted Technology Partner For</p>
+        </div>
+        <div class="relative flex overflow-x-hidden group">
+            <div class="animate-scroll flex gap-16 whitespace-nowrap opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-500">
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-flag"></i> MOGADISHU</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-star"></i> HARGEISA</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-anchor"></i> DJIBOUTI</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-mountain"></i> JIGJIGA (DDS)</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-lighthouse"></i> GAROWE</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-tree"></i> KISMAYO</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-droplet"></i> BELEDWEYNE</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-sun"></i> DHUSAMAREB</span>
+                
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-flag"></i> MOGADISHU</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-star"></i> HARGEISA</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-anchor"></i> DJIBOUTI</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-mountain"></i> JIGJIGA (DDS)</span>
+                <span class="text-2xl font-display font-bold text-brand-dark flex items-center gap-2"><i class="fa-solid fa-lighthouse"></i> GAROWE</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-display font-bold text-brand-dark">Why Leaders Choose <span class="text-brand-blue">HiigsiTech</span></h2>
+                <p class="text-slate-500 mt-3">We combine Silicon Valley technology with Horn of Africa understanding.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover-lift group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Political Security</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">We know politics is sensitive. Our systems come with military-grade DDoS protection (Layer 7) to prevent rivals from taking your site down during critical times.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover-lift group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Local Context</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">We understand clan dynamics, regional sensibilities, and the specific needs of local voters. We build platforms that resonate with people from Djibouti to Jigjiga.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover-lift group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Speed & Autonomy</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Campaigns move fast. Our "Victory" dashboard lets you post news updates instantly from your phone without needing to call a developer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 relative z-10 bg-white" id="pricing">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <div class="inline-block px-3 py-1 rounded bg-brand-dark text-white text-[10px] font-bold uppercase tracking-widest mb-4">Approved Packages</div>
+                <h2 class="text-4xl font-display font-bold text-brand-dark">Infrastructure Tiers</h2>
+                <p class="text-slate-500 mt-4">Transparent pricing. No hidden fees. Choose your level of power.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 items-start">
+
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition duration-500 relative group" data-aos="fade-right">
+                    <div class="mb-8">
+                        <h3 class="text-slate-400 font-display font-bold uppercase tracking-widest text-xs mb-2">Grassroots</h3>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-5xl font-bold text-brand-dark">$300</span>
+                            <span class="text-sm text-slate-500 font-medium">/ one-time</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-4 font-medium">For Local Council & Municipal.</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-white text-green-600"><i class="fa-solid fa-desktop"></i></div>
+                            <div class="text-sm text-slate-600 font-bold">Professional Landing Page</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-white text-green-600"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="text-sm text-slate-600">4-Section Hero Layout</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-white text-green-600"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="text-sm text-slate-600">WhatsApp Chat Button</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-white text-green-600"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="text-sm text-slate-600">Fast Cloud Hosting (1 Mo)</div>
+                        </div>
+                        <div class="flex items-center gap-3 opacity-50">
+                            <div class="feature-icon bg-slate-200 text-slate-400"><i class="fa-solid fa-ban"></i></div>
+                            <div class="text-sm text-slate-400 decoration-slate-300 line-through">No Donation System</div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/252653227084?text=I%20want%20the%20Starter%20Package%20($300)" class="block w-full py-4 rounded-xl border-2 border-slate-300 text-slate-600 text-center font-bold text-sm hover:border-brand-blue hover:text-brand-blue transition">Select Starter</a>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 border-t-4 border-brand-blue shadow-2xl relative transform lg:-translate-y-6 z-20" data-aos="fade-up">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-blue text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-lg shadow-blue-500/40">Most Popular</div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-brand-blue font-display font-bold uppercase tracking-widest text-xs mb-2">The Contender</h3>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-6xl font-bold text-brand-dark">$600</span>
+                            <span class="text-sm text-slate-500 font-medium">/ one-time</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-4 font-medium">For MP & Regional Candidates.</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Design & Features:</p>
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-blue-50 text-brand-blue"><i class="fa-solid fa-sitemap"></i></div>
+                            <div class="text-sm text-brand-dark font-bold">5-Page Full Website</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-blue-50 text-brand-blue"><i class="fa-solid fa-credit-card"></i></div>
+                            <div class="text-sm text-brand-dark font-bold">Donation Integration (Zaad/EVC)</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-blue-50 text-brand-blue"><i class="fa-solid fa-newspaper"></i></div>
+                            <div class="text-sm text-brand-dark font-bold">Dynamic Blog & News System</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-blue-50 text-brand-blue"><i class="fa-solid fa-users"></i></div>
+                            <div class="text-sm text-brand-dark font-bold">Volunteer Registration Form</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-blue-50 text-brand-blue"><i class="fa-solid fa-globe"></i></div>
+                            <div class="text-sm text-brand-dark font-bold">Free .SO Domain (1 Year)</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="feature-icon bg-blue-50 text-brand-blue"><i class="fa-solid fa-lock"></i></div>
+                            <div class="text-sm text-brand-dark font-bold">SSL Security Certificate</div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/252653227084?text=I%20want%20the%20Professional%20Package%20($600)" class="block w-full py-4 rounded-xl bg-brand-blue text-white text-center font-bold text-sm hover:bg-blue-700 shadow-lg shadow-blue-500/30 transition hover:scale-[1.02]">Secure Professional</a>
+                </div>
+
+                <div class="bg-brand-dark text-white rounded-3xl p-1 shadow-2xl hover:shadow-blue-900/50 transition duration-500 relative overflow-hidden group" data-aos="fade-left">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl group-hover:bg-blue-500/30 transition"></div>
+                    
+                    <div class="bg-slate-900/90 backdrop-blur-xl rounded-[20px] p-8 h-full relative z-10">
+                        <div class="mb-6 border-b border-slate-700 pb-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fa-solid fa-crown text-brand-gold text-sm"></i>
+                                <h3 class="text-brand-gold font-display font-bold uppercase tracking-widest text-xs">Victory Suite</h3>
+                            </div>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-6xl font-bold text-white">$1,200</span>
+                                <span class="text-sm text-blue-200 font-medium">/ one-time</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-4 leading-relaxed">Government-grade infrastructure. Maximum security, custom backend, and data dominance.</p>
+                        </div>
+                        
+                        <a href="https://wa.me/252653227084?text=I%20want%20the%20Victory%20Package%20($1200)" class="block w-full py-4 rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-600 text-black text-center font-bold text-sm hover:scale-[1.02] shadow-lg shadow-yellow-500/20 transition mb-6">Initialize Victory</a>
+
+                        <div class="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden">
+                            <div class="p-3 bg-slate-800 border-b border-slate-700 flex justify-between items-center">
+                                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest">Full Specs</span>
+                                <span class="text-[10px] text-slate-500 animate-pulse">Scroll for more ↓</span>
+                            </div>
+                            
+                            <div class="h-[450px] overflow-y-auto long-scroll p-4 space-y-6">
+                                
+                                <div>
+                                    <h4 class="text-[10px] font-bold text-slate-500 uppercase mb-3">Backend & Control</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-brand-gold"><i class="fa-solid fa-server"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Custom CMS Dashboard</div><div class="text-[10px] text-slate-400">Update content instantly (No coding).</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-brand-gold"><i class="fa-solid fa-database"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Voter Data Export (CSV)</div><div class="text-[10px] text-slate-400">Download supporter lists to Excel.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-brand-gold"><i class="fa-solid fa-users-gear"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Admin Roles</div><div class="text-[10px] text-slate-400">Staff accounts with limited access.</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4 class="text-[10px] font-bold text-slate-500 uppercase mb-3 pt-2 border-t border-slate-700">Advanced Design</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-blue-400"><i class="fa-solid fa-palette"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Premium Modern UI</div><div class="text-[10px] text-slate-400">Glassmorphism & High-End Aesthetics.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-blue-400"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Motion Graphics (AOS)</div><div class="text-[10px] text-slate-400">Scroll animations & interactive elements.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-blue-400"><i class="fa-solid fa-layer-group"></i></div>
+                                            <div><div class="text-xs font-bold text-white">10+ Custom Sections</div><div class="text-[10px] text-slate-400">Gallery, Timeline, Issues, Manifesto, etc.</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4 class="text-[10px] font-bold text-slate-500 uppercase mb-3 pt-2 border-t border-slate-700">Gov-Grade Security</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-red-400"><i class="fa-solid fa-shield-cat"></i></div>
+                                            <div><div class="text-xs font-bold text-white">DDoS Protection (L7)</div><div class="text-[10px] text-slate-400">Military-grade anti-hacking firewall.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-red-400"><i class="fa-solid fa-lock"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Advanced Encryption</div><div class="text-[10px] text-slate-400">Secure donation & data transmission.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-red-400"><i class="fa-solid fa-rotate"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Daily Auto-Backups</div><div class="text-[10px] text-slate-400">Instant disaster recovery system.</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4 class="text-[10px] font-bold text-slate-500 uppercase mb-3 pt-2 border-t border-slate-700">Integrations & Support</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-green-400"><i class="fa-solid fa-envelope"></i></div>
+                                            <div><div class="text-xs font-bold text-white">10x Gov Emails</div><div class="text-[10px] text-slate-400">info@candidate.so, press@..., etc.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-green-400"><i class="fa-solid fa-language"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Multi-Language Ready</div><div class="text-[10px] text-slate-400">Somali, English & Arabic infrastructure.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-green-400"><i class="fa-brands fa-google"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Advanced SEO Schema</div><div class="text-[10px] text-slate-400">Rank #1 for candidate name.</div></div>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <div class="feature-icon bg-slate-700 text-green-400"><i class="fa-solid fa-headset"></i></div>
+                                            <div><div class="text-xs font-bold text-white">Priority Support</div><div class="text-[10px] text-slate-400">Direct access to senior developers.</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-slate-900 to-transparent pointer-events-none"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-dark text-white border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-brand-blue font-bold text-xs uppercase tracking-[0.2em] mb-2">The Digital Reality</p>
+                    <h2 class="text-4xl font-display font-bold mb-6">Why Social Media <br>Is Not Enough</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Facebook and TikTok are owned by foreign companies. They can delete your page, shadow-ban your posts, or hide your message from voters at any moment.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 mt-1"><i class="fa-solid fa-xmark"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white">Zero Control</h4>
+                                <p class="text-xs text-slate-400">Algorithms decide who sees your posts, not you.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-blue/20 flex items-center justify-center text-brand-blue mt-1"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white">Total Ownership</h4>
+                                <p class="text-xs text-slate-400">With a HiigsiTech website, you own your data, your news, and your donation platform forever.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700" data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-white mb-6">The "Professional" Gap</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between p-4 bg-slate-900 rounded-xl border border-slate-800">
+                            <span class="text-sm text-slate-300">Candidate A (Facebook Only)</span>
+                            <span class="px-3 py-1 bg-red-500/10 text-red-400 text-xs font-bold rounded">Looks Amateur</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-slate-900 rounded-xl border border-slate-800">
+                            <span class="text-sm text-slate-300">Candidate B (Old Website)</span>
+                            <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-xs font-bold rounded">Looks Outdated</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-brand-blue/20 rounded-xl border border-brand-blue transform scale-105 shadow-lg">
+                            <span class="text-sm font-bold text-white">You (HiigsiTech Platform)</span>
+                            <span class="px-3 py-1 bg-brand-blue text-white text-xs font-bold rounded">Government Leader</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-white py-12 border-t border-slate-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-left mb-6 md:mb-0">
+                <div class="text-white font-bold text-2xl font-display">HiigsiTech</div>
+                <p class="text-sm text-slate-400 mt-2">Premier Digital Solutions for the Horn of Africa.</p>
+                <p class="text-xs text-slate-500 mt-1">Mogadishu • Garowe • Hargeisa • Jigjiga</p>
+            </div>
+            <div class="text-center md:text-right">
+                <a href="tel:+252653227084" class="text-xl font-bold text-brand-blue hover:text-white transition block mb-2"><i class="fa-solid fa-phone mr-2"></i> +252 65 322 7084</a>
+                <a href="mailto:info@hiigsitech.com" class="text-sm text-slate-500 hover:text-brand-blue transition">info@hiigsitech.com</a>
+            </div>
+        </div>
+        <div class="border-t border-slate-800 mt-10 pt-10 text-center">
+            <p class="text-[10px] text-slate-500 uppercase tracking-widest">
+                &copy; 2025 Hiigsi Technology Solutions. All Rights Reserved. | Proposal ID: #GOV-UNIVERSAL-X
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+        
+        // Navbar Blur Effect on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md', 'bg-white/95');
+            } else {
+                nav.classList.remove('shadow-md', 'bg-white/90');
+            }
+        });
+    </script>
+</body>
+</html>
